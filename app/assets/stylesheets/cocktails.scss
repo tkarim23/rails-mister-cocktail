@@ -1,3 +1,37 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card-category {
+  height: 300px;
+  padding-bottom: 8px;
+  margin-top: 15px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+}
+
+.pad10 {
+  padding-top: 10px,
+}
+
+
+.card-link {
+  color: white;
+}
+
+.submit {
+  margin: 20px 0
+}

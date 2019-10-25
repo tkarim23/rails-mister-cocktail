@@ -4,6 +4,8 @@
 
   <h1 class="text-underline"> <%= @cocktail.name %> </h1>
 
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
+
 
 
 
@@ -29,8 +31,8 @@
     <% end %>
   </ul>
   <div class="pad20">
-    <%= link_to "Add ingredient", new_cocktail_dose_path(@cocktail), class: "btn btn-primary", id: "ingredient-add-button"%>
-    <%= link_to "Go back", cocktails_path, class: "btn btn-warning" %>
+
+    <%= link_to "Go back", root_path, class: "btn btn-warning" %>
   </div>
 
 
