@@ -6,10 +6,10 @@ class DosesController < ApplicationController
 
   def create
     @dose = Dose.new(dose_params)
-    @ingredient = Ingredient.find(params[:dose][:ingredient])
+    # @ingredient = Ingredient.find(params[:dose][:ingredient])
     @cocktail = Cocktail.find(params[:cocktail_id])
     @dose.cocktail = @cocktail
-    @dose.ingredient = @ingredient
+    # @dose.ingredient = @ingredient
 
     if @dose.save
       redirect_to cocktail_path(@cocktail)
